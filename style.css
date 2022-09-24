@@ -1,0 +1,21 @@
+.button2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardcolor {
+    background-color: rgb(238, 161, 247);
+}
+
+.backcolor {
+    background-color: #82fbff82;
+}
+
+input {
+    border-radius: 7px;
+    border: 3px inset rgb(0, 0, 100);
+}
+
+ul {
+    list-style: none;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="backcolor">
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <div class="card cardcolor">
+                    <div class="card-header fs-2 text-center bg-success text-warning">
+                        Ping Pong Score Keeper
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1799&q=80"
+                        alt="Error" class="img-fluid">
+                    <div class="card-body">
+                        <div class="container px-4">
+                            <div class="button2">
+                                <form id="namesub1">
+                                    <!-- <label for="player1">Player 1</label> -->
+                                    <input type="text" placeholder="Player One" id="player1">
+                                    <button class="btn btn-info border border-3 border-primary">Submit</button>
+                                </form>
+                                <form id="namesub2">
+                                    <!-- <label for="player2">Player 2</label> -->
+                                    <input type="text" placeholder="Player Two" id="player2">
+                                    <button class="btn btn-info border border-3 border-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                        <p class="card-text">Use the buttons to keep the scores tracking!</p>
+                        <section>
+                            <label for="playto" class="fw-bold">Set the Winning Score</label>
+                            <select name="playto" id="playto" class="form-select form-select-sm"
+                                style="width: auto; display: inline-block; background-color: aquamarine;">
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                            </select>
+                        </section>
+                        <div class="row mt-3">
+                            <div class="col button2">
+                                <div>
+                                    <button id="p1Button" class="btn btn-success btn-lg text-capitalize fw-bold">+1
+                                        Player
+                                        One</button>
+                                    <button id="p2Button" class="btn btn-primary btn-lg text-capitalize fw-bold">+1
+                                        Player
+                                        Two</button>
+                                </div>
+                                <button id="reset" class="btn btn-danger btn-lg">Reset</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="text-center">
+                            <h2 class="fs-3 fw-bold text-success border border-2 mb-4 p-3">Scorecard</h2>
+                            <div class="row">
+                                <div class="col-4">
+                                    <h5>Winner</h5>
+                                    <ul id="p1list">
+
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <h5>Score</h5>
+                                    <ul id="scorelist">
+
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <h5>Loser</h5>
+                                    <ul id="p2list">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
